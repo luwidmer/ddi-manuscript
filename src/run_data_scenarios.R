@@ -70,10 +70,10 @@ make_levelplots_ggplot <- function (data, title)
   
   vars <- c("ewoc_fail", "prob_overdose", "prob_target", "prob_underdose")
   var_labels <- c("EWOC failure", "P(overdose)", "P(target)", "P(underdose)")
-  data <- select(data, "A", "B", "type", vars)
+  data <- select(data, all_of(c("A", "B", "type", vars)))
 
   data_long <- data %>% 
-    pivot_longer(cols=vars, names_to="variable", values_to="Probability")
+    pivot_longer(cols=all_of(vars), names_to="variable", values_to="Probability")
   
   data_long$variable <- case_when(
     data_long$variable == "ewoc_fail" ~ "EWOC failure",
