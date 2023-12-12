@@ -1,4 +1,3 @@
-renv::activate()
 renv::restore()
 
 required_packages <- c(

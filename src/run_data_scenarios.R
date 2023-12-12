@@ -119,7 +119,7 @@ plot_marginals <- function(data, title)
     coord_cartesian(ylim=c(0,0.8)) +
     geom_hline(yintercept = c(0.16, 0.33), linetype = "dotted") +
     geom_pointrange(aes(y=`50%`, ymin=`2.5%`, ymax=`97.5%`)) +
-    geom_linerange(aes(ymin=`25%`, ymax=`75%`), size=1.5) +
+    geom_linerange(aes(ymin=`25%`, ymax=`75%`), linewidth=1.5) +
     #ggtitle(paste0("DLT Probability, ", title), "Shown is the median (dot), 50% CrI (thick line) and 95% CrI (thin line)") +
     ylab(NULL) + 
     xlab("Dose Drug 2 [mg]")
@@ -130,7 +130,7 @@ plot_marginals <- function(data, title)
     coord_cartesian(ylim=c(0,0.8)) +
     geom_hline(yintercept = c(0.16, 0.33), linetype = "dotted") +
     geom_pointrange(aes(y=`50%`, ymin=`2.5%`, ymax=`97.5%`)) +
-    geom_linerange(aes(ymin=`25%`, ymax=`75%`), size=1.5) +
+    geom_linerange(aes(ymin=`25%`, ymax=`75%`), linewidth=1.5) +
     #ggtitle(paste0("DLT Probability, ", title), "Shown is the median (dot), 50% CrI (thick line) and 95% CrI (thin line)") +
     ylab(NULL) + 
     xlab("Dose Drug 1 [mg]")
