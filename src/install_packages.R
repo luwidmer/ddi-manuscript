@@ -15,10 +15,10 @@ required_packages <- c(
   "posterior"
 )
 
-if (!all(required_packages %in% installed.packages()))
-{
-  install.packages(required_packages[!(required_packages %in% installed.packages())])
-}
+# if (!all(required_packages %in% installed.packages()))
+# {
+#   install.packages(required_packages[!(required_packages %in% installed.packages())])
+# }
 
 for (pkg in required_packages)
 {
