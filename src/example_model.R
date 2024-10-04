@@ -72,41 +72,40 @@ dose_info <- function()
 trial_dose_info <- dose_info()
 
 
-set_prior <- function(trial, mu_sd_inter, iter, warmup, chains = 4) 
+set_prior <- function(trial, mu_sd_inter, sampling_options) 
 {
   dims <- summary(trial, "dimensionality")
   
-  update(
-    trial,
-    # Prior mean and sd on mu_{alpha_i}, mu_{beta_i}
-    prior_EX_mu_mean_comp  = matrix(c(logit(0.10), 0), nrow = dims$num_components, ncol = 2, TRUE),
-    prior_EX_mu_sd_comp    = matrix(c(2, 1), nrow = dims$num_components, ncol = 2, TRUE),
-    
-    # Prior mean and sd on tau_{alpha_{s,i}}, tau{beta_{s,i}} 
-    prior_EX_tau_mean_comp = abind(
-      matrix(c(0, 0), nrow = dims$num_components, ncol = 2, TRUE), # add more strata here if needed
-      along = 0
-    ),
-    prior_EX_tau_sd_comp = abind(
-      matrix(0, nrow = dims$num_components, ncol = 2, TRUE), # add more strata here if needed
-      along = 0
-    ),
-    
-    # Prior mean and sd on mu_{eta}
-    prior_EX_mu_mean_inter  = rep(0,   dims$num_interaction_terms),
-    prior_EX_mu_sd_inter    = rep(mu_sd_inter, dims$num_interaction_terms), 
-    prior_EX_tau_mean_inter = matrix(0, nrow = dims$num_strata, ncol = dims$num_interaction_terms),
-    prior_EX_tau_sd_inter   = matrix(0, nrow = dims$num_strata, ncol = dims$num_interaction_terms),
-    
-    prior_is_EXNEX_comp = rep(FALSE, dims$num_components),
-    prior_EX_prob_comp = matrix(1, nrow = dims$num_groups, ncol = dims$num_components),
-    
-    prior_is_EXNEX_inter = rep(FALSE, dims$num_interaction_terms),
-    prior_EX_prob_inter = matrix(1, nrow = dims$num_groups, ncol = dims$num_interaction_terms),
-    
-    prior_tau_dist = 0,
-    iter = iter,
-    warmup = warmup,
-    chains = chains
-  )
+  do.call(
+    update, 
+    args = c(list(
+      trial,
+      # Prior mean and sd on mu_{alpha_i}, mu_{beta_i}
+      prior_EX_mu_mean_comp  = matrix(c(logit(0.10), 0), nrow = dims$num_components, ncol = 2, TRUE),
+      prior_EX_mu_sd_comp    = matrix(c(2, 1), nrow = dims$num_components, ncol = 2, TRUE),
+      
+      # Prior mean and sd on tau_{alpha_{s,i}}, tau{beta_{s,i}} 
+      prior_EX_tau_mean_comp = abind(
+        matrix(c(0, 0), nrow = dims$num_components, ncol = 2, TRUE), # add more strata here if needed
+        along = 0
+      ),
+      prior_EX_tau_sd_comp = abind(
+        matrix(0, nrow = dims$num_components, ncol = 2, TRUE), # add more strata here if needed
+        along = 0
+      ),
+      
+      # Prior mean and sd on mu_{eta}
+      prior_EX_mu_mean_inter  = rep(0,   dims$num_interaction_terms),
+      prior_EX_mu_sd_inter    = rep(mu_sd_inter, dims$num_interaction_terms), 
+      prior_EX_tau_mean_inter = matrix(0, nrow = dims$num_strata, ncol = dims$num_interaction_terms),
+      prior_EX_tau_sd_inter   = matrix(0, nrow = dims$num_strata, ncol = dims$num_interaction_terms),
+      
+      prior_is_EXNEX_comp = rep(FALSE, dims$num_components),
+      prior_EX_prob_comp = matrix(1, nrow = dims$num_groups, ncol = dims$num_components),
+      
+      prior_is_EXNEX_inter = rep(FALSE, dims$num_interaction_terms),
+      prior_EX_prob_inter = matrix(1, nrow = dims$num_groups, ncol = dims$num_interaction_terms),
+      
+      prior_tau_dist = 0), sampling_options)
+    )
 }

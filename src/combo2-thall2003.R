@@ -59,18 +59,17 @@ thall2003_prior <- function(sd_inter_inter = sqrt(2*2^2), sd_inter_slope = 0.5) 
 #   iter = 10000
 # )
 
-set_thall2003_prior <- function(drug_info, iter, warmup, chains, ...) {
-  brm(
-    thall2003_model,
-    data = prepare_dummy_data(drug_info),
-    family = binomial,
-    prior = thall2003_prior(...),
-    file="brms_thall2003",
-    file_refit="always",
-    chains = chains,
-    iter = iter,
-    warmup = warmup,
-    control = list(adapt_delta = 0.9)
+set_thall2003_prior <- function(drug_info, sampling_options, ...) {
+  do.call(brm,
+    c(list(
+      thall2003_model,
+      data = prepare_dummy_data(drug_info),
+      family = binomial,
+      prior = thall2003_prior(...),
+      file="brms_thall2003",
+      file_refit="always",
+      control = list(adapt_delta = 0.9)
+    ), sampling_options)
   )
 }
 
