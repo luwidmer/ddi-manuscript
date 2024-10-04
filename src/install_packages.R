@@ -12,20 +12,22 @@ required_packages <- c(
   "brms",
   "tinytex",
   "knitr",
-  "posterior"
+  "posterior",
+  "bayesplot",
+  "tidybayes"
 )
 
-# if (!all(required_packages %in% installed.packages()))
-# {
-#   install.packages(required_packages[!(required_packages %in% installed.packages())])
-# }
+if (!all(required_packages %in% installed.packages()))
+{
+  install.packages(required_packages[!(required_packages %in% installed.packages())])
+}
 
 for (pkg in required_packages)
 {
   library(package = pkg, character.only = TRUE)
 }
 
-if (!tinytex::is_tinytex())
+if (!tinytex::is_tinytex() && length(Sys.which('tlmgr')[[1]]) == 0)
 {
   tinytex::install_tinytex()
 }
