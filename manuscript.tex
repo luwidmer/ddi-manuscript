@@ -16,7 +16,7 @@
 \usepackage{makecell}
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
-\newcommand{\revision}[1]{\textcolor{blue}{#1}}
+\newcommand{\revision}[1]{#1}
 \usepackage{subcaption}
 
 \captionsetup[subfigure]{labelfont={bf,sf}, labelformat=simple, labelsep=none, textfont=normalfont, font=normalsize, singlelinecheck=off, justification=raggedright} %
@@ -40,8 +40,8 @@
 
 
 \authormark{WIDMER \textsc{et al}} %  
-
-% Novartis Pharma AG, Basel, Switzerland
+\fundingInfo{Novartis Pharma AG, Basel, Switzerland and Novartis Pharmaceuticals, East Hanover, NJ, USA}
+% 
 \address[1]{\orgname{Novartis Pharma AG}, \orgaddress{CH-4002 \state{Basel}, \country{Switzerland}}} % \orgdiv{Org Division}
 
 \address[2]{\orgdiv{Novartis Pharmaceuticals}, \orgaddress{East Hanover, \state{NJ}, \country{USA}}}
@@ -248,29 +248,7 @@ To ensure that Paracelsus' principle holds (any drug approaching infinity leads 
 \end{IEEEeqnarray}
 
 
-\begin{center}
-\begin{table}[th]%
-\caption{Summary of interaction models and their properties. \label{tab:modelProperties}}
-\centering
-\begin{tabular*}{450pt}{@{\extracolsep\fill}rcccc@{\extracolsep\fill}}
-\toprule
-& \multicolumn{4}{@{}c@{}}{\textbf{Model}}  \\
-\cmidrule{2-5}
-\textbf{Property} & \textbf{No interaction} \eqref{eq:independentModel}  & \textbf{Thall \emph{et al}, 2003}\cite{Thall2003}   & \textbf{Linear} \eqref{eq:gamma_linear} & \textbf{Saturating} \eqref{eq:gamma_saturating}  \\
-\midrule
-\makecell[r]{Model reduces to lower-order \\ model at 0 dose \eqref{eq:noContributionAtZeroDose}} & \checkmark            &  \checkmark  &  \checkmark    &    \checkmark \vspace{0.2cm}  \\
-\makecell[r]{Model compatible with \\ no-interaction model \eqref{eq:reducesToIndependent}} & \checkmark  & \checkmark  & \checkmark & \checkmark  \vspace{0.2cm}\\
-\makecell[r]{$\pi \rightarrow 1$ as $d \rightarrow \infty$\eqref{eq:asymptoticToxicity}} &  \checkmark   &  \checkmark         & \xmark      &  \checkmark  \vspace{0.2cm}          \\
-\makecell[r]{Can model synergistic \\ drug-drug interactions \eqref{eq:synergisticToxicity}} &   \xmark   & \checkmark & \checkmark & \checkmark  \vspace{0.2cm} \\
-\makecell[r]{Can model antagonistic \\ drug-drug interactions \eqref{eq:antagonisticToxicity}} &   \xmark   & \checkmark & \checkmark & \checkmark  \vspace{0.2cm} \\
-\makecell[r]{Can model non-monotonic \\ antagonistic drug-drug \\ interactions \eqref{eq:antagonisticToxicityNonMonotonic}} &   \xmark   & \xmark & \checkmark & \checkmark  \\
-\bottomrule
-\end{tabular*}
-% \begin{tablenotes}
-% \item[${}^\dagger$] As defined in table~\ref{tab:histDataSingleDrug}.
-% \end{tablenotes}
-\end{table}
-\end{center}
+
 
 This model is the only one of the above that satisfies conditions \eqref{eq:noContributionAtZeroDose}-\eqref{eq:antagonisticToxicityNonMonotonic} (see table~\ref{tab:modelProperties}). Note that, for both interaction models \eqref{eq:gamma_linear} and \eqref{eq:gamma_saturating}, it holds that $\gamma_\text{linear}\left(\bm{d}^*\right) = \gamma_\text{saturating}\left(\bm{d}^*\right) = 1$, but in contrast to $\gamma_\text{linear}$, $\gamma_\text{saturating}$ will saturate at 2 if any dose goes to infinity. 
 
@@ -305,49 +283,6 @@ To focus the data scenarios onto the differences in the model structure, we assu
 \subsection{Data scenarios}
 We investigate data scenarios (summarized in table~\ref{tab:dataScenarios}) for a combination trial of drugs A and B with historical data for the individual drugs A and B, and take a deeper look at potential outcomes and the resulting response surface after different hypothetical first 5-patient combination cohorts. Here, we achieve the following (practical) goals for the model and model parametrization:
 
-\begin{center}
-\begin{table}[th]%
-\caption{Summary of data scenarios. \label{tab:dataScenarios}}
-\centering
-\begin{tabular*}{400pt}{@{\extracolsep\fill}rcrrrr@{\extracolsep\fill}}
-\toprule
-& \multicolumn{5}{@{}c@{}}{\textbf{First combination cohort}}  \\
-\cmidrule{1-6}
-\textbf{Figure} & \textbf{Historical data}${}^\dagger$  & \textbf{Drug 1 dose (mg)}   & \textbf{Drug 2 dose (mg)}  & \textbf{\# Patients} & \textbf{\# DLT events}   \\
-\midrule
-\ref{fig:prior_histdata}AB & \xmark            &    &      &   &    \\
-\ref{fig:prior_histdata}CD  &  \checkmark      &    &      &   &    \\
-\ref{fig:prior_histdata_0_5}  &  \checkmark    & 200 & 200 & 5 & 0  \\
-\ref{fig:prior_histdata_5_5}AB  &  \checkmark  & 200 & 200 & 5 & 5  \\
-\ref{fig:prior_histdata_5_5}CD  &  \checkmark  & 100 & 100 & 5 & 5  \\
-\bottomrule
-\end{tabular*}
-\begin{tablenotes}
-\item[${}^\dagger$] As defined in table~\ref{tab:histDataSingleDrug}.
-\end{tablenotes}
-\end{table}
-\end{center}
-\begin{center}
-\begin{table}%
-\caption{Single-drug DLT data summary for drugs A and B used as historical data for the data scenarios on the trial combining drugs A and B.\label{tab:histDataSingleDrug}}
-\centering
-\begin{tabular*}{400pt}{@{\extracolsep\fill}rrrrrrrr@{\extracolsep\fill}}
-\toprule
-& & \multicolumn{6}{@{}c@{}}{\textbf{\# DLT events at dose (mg)}}  \\
-\cmidrule{3-8}
-\textbf{Drug} & \textbf{\# Patients per dose} & \textbf{50}  & \textbf{100}  & \textbf{200}  & \textbf{300} & \textbf{400} & \textbf{600}  \\
-\midrule
-1 & 10  & 0  & 1  & 1  & 2 & 3 & 6  \\
-2 & 5   & 0  & 0  & 1  & 1 & 1 & 3 \\
-\bottomrule
-\end{tabular*}
-%\begin{tablenotes}
-%\item Source: Example for table source text.
-%\item[$\dagger$] Example for a first table footnote.
-%\item[$\ddagger$] Example for a second table footnote.
-%\end{tablenotes}
-\end{table}
-\end{center}
 
 \begin{enumerate}
 \item Before observing the first combination cohort, it should be possible to encode our expectations on the drug-drug interaction from, e.g., pre-clinical data into a reasonable prior. For instance, we could center our prior on no interaction while allowing for some variability towards synergistic and antagonistic interactions. On top of this, we obviously want to be able to take into account single-drug historical data (detailed in table~\ref{tab:histDataSingleDrug}). This is trivially achievable with our chosen model formulation, and the initial prior without historical data (Figures~\ref{fig:prior_histdata}~A and \ref{fig:prior_histdata}~B) can easily be updated with the single-drug historical data, in this case allowing for a larger range of drug A/B dose combinations that satisfy the EWOC criterion (Figures~\ref{fig:prior_histdata}~C and \ref{fig:prior_histdata}~D).
@@ -489,5 +424,76 @@ The following supporting information is available as part of the online article:
 %
 %\begin{biography}{\includegraphics[width=66pt,height=86pt,draft]{empty}}{\textbf{Author Name.} This is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text.}
 %\end{biography}
+\begin{center}
+\begin{table}[th]%
+\caption{Summary of interaction models and their properties. \label{tab:modelProperties}}
+\centering
+\begin{tabular*}{450pt}{@{\extracolsep\fill}rcccc@{\extracolsep\fill}}
+\toprule
+& \multicolumn{4}{@{}c@{}}{\textbf{Model}}  \\
+\cmidrule{2-5}
+\textbf{Property} & \textbf{No interaction} \eqref{eq:independentModel}  & \textbf{Thall \emph{et al}, 2003}\cite{Thall2003}   & \textbf{Linear} \eqref{eq:gamma_linear} & \textbf{Saturating} \eqref{eq:gamma_saturating}  \\
+\midrule
+\makecell[r]{Model reduces to lower-order \\ model at 0 dose \eqref{eq:noContributionAtZeroDose}} & \checkmark            &  \checkmark  &  \checkmark    &    \checkmark \vspace{0.2cm}  \\
+\makecell[r]{Model compatible with \\ no-interaction model \eqref{eq:reducesToIndependent}} & \checkmark  & \checkmark  & \checkmark & \checkmark  \vspace{0.2cm}\\
+\makecell[r]{$\pi \rightarrow 1$ as $d \rightarrow \infty$\eqref{eq:asymptoticToxicity}} &  \checkmark   &  \checkmark         & \xmark      &  \checkmark  \vspace{0.2cm}          \\
+\makecell[r]{Can model synergistic \\ drug-drug interactions \eqref{eq:synergisticToxicity}} &   \xmark   & \checkmark & \checkmark & \checkmark  \vspace{0.2cm} \\
+\makecell[r]{Can model antagonistic \\ drug-drug interactions \eqref{eq:antagonisticToxicity}} &   \xmark   & \checkmark & \checkmark & \checkmark  \vspace{0.2cm} \\
+\makecell[r]{Can model non-monotonic \\ antagonistic drug-drug \\ interactions \eqref{eq:antagonisticToxicityNonMonotonic}} &   \xmark   & \xmark & \checkmark & \checkmark  \\
+\bottomrule
+\end{tabular*}
+% \begin{tablenotes}
+% \item[${}^\dagger$] As defined in table~\ref{tab:histDataSingleDrug}.
+% \end{tablenotes}
+\end{table}
+\end{center}
 
+\clearpage
+
+\begin{center}
+\begin{table}[th]%
+\caption{Summary of data scenarios. \label{tab:dataScenarios}}
+\centering
+\begin{tabular*}{400pt}{@{\extracolsep\fill}rcrrrr@{\extracolsep\fill}}
+\toprule
+& \multicolumn{5}{@{}c@{}}{\textbf{First combination cohort}}  \\
+\cmidrule{1-6}
+\textbf{Figure} & \textbf{Historical data}${}^\dagger$  & \textbf{Drug 1 dose (mg)}   & \textbf{Drug 2 dose (mg)}  & \textbf{\# Patients} & \textbf{\# DLT events}   \\
+\midrule
+\ref{fig:prior_histdata}AB & \xmark            &    &      &   &    \\
+\ref{fig:prior_histdata}CD  &  \checkmark      &    &      &   &    \\
+\ref{fig:prior_histdata_0_5}  &  \checkmark    & 200 & 200 & 5 & 0  \\
+\ref{fig:prior_histdata_5_5}AB  &  \checkmark  & 200 & 200 & 5 & 5  \\
+\ref{fig:prior_histdata_5_5}CD  &  \checkmark  & 100 & 100 & 5 & 5  \\
+\bottomrule
+\end{tabular*}
+\begin{tablenotes}
+\item[${}^\dagger$] As defined in table~\ref{tab:histDataSingleDrug}.
+\end{tablenotes}
+\end{table}
+\end{center}
+
+\clearpage
+
+\begin{center}
+\begin{table}%
+\caption{Single-drug DLT data summary for drugs A and B used as historical data for the data scenarios on the trial combining drugs A and B.\label{tab:histDataSingleDrug}}
+\centering
+\begin{tabular*}{400pt}{@{\extracolsep\fill}rrrrrrrr@{\extracolsep\fill}}
+\toprule
+& & \multicolumn{6}{@{}c@{}}{\textbf{\# DLT events at dose (mg)}}  \\
+\cmidrule{3-8}
+\textbf{Drug} & \textbf{\# Patients per dose} & \textbf{50}  & \textbf{100}  & \textbf{200}  & \textbf{300} & \textbf{400} & \textbf{600}  \\
+\midrule
+1 & 10  & 0  & 1  & 1  & 2 & 3 & 6  \\
+2 & 5   & 0  & 0  & 1  & 1 & 1 & 3 \\
+\bottomrule
+\end{tabular*}
+%\begin{tablenotes}
+%\item Source: Example for table source text.
+%\item[$\dagger$] Example for a first table footnote.
+%\item[$\ddagger$] Example for a second table footnote.
+%\end{tablenotes}
+\end{table}
+\end{center}
 \end{document}
