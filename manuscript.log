@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.5)  4 OCT 2024 16:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.5)  6 OCT 2024 13:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1109,189 +1109,194 @@ Overfull \hbox (10.12456pt too wide) in alignment at lines 231--235
  []
 
 [6] [7]
-Overfull \hbox (2.4567pt too wide) in alignment at lines 312--324
-[] [] [] [] [] [] 
- []
-
-[8]
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3
-76.
+11.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-<figures/ggplot_mu_sd_inter_0_5_Prior.pdf, id=223, 505.89pt x 505.89pt>
+<figures/ggplot_mu_sd_inter_0_5_Prior.pdf, id=194, 505.89pt x 505.89pt>
 File: figures/ggplot_mu_sd_inter_0_5_Prior.pdf Graphic file (type pdf)
 <use figures/ggplot_mu_sd_inter_0_5_Prior.pdf>
 Package pdftex.def Info: figures/ggplot_mu_sd_inter_0_5_Prior.pdf  used on inpu
-t line 377.
+t line 312.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
-Overfull \hbox (11.62302pt too wide) in paragraph at lines 377--378
+Overfull \hbox (11.62302pt too wide) in paragraph at lines 312--313
 [][] 
  []
 
-<figures/ggplot_mu_sd_inter_1_5_Prior.pdf, id=224, 505.89pt x 505.89pt>
+<figures/ggplot_mu_sd_inter_1_5_Prior.pdf, id=195, 505.89pt x 505.89pt>
 File: figures/ggplot_mu_sd_inter_1_5_Prior.pdf Graphic file (type pdf)
 <use figures/ggplot_mu_sd_inter_1_5_Prior.pdf>
 Package pdftex.def Info: figures/ggplot_mu_sd_inter_1_5_Prior.pdf  used on inpu
-t line 382.
+t line 317.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
-Overfull \hbox (11.62302pt too wide) in paragraph at lines 382--383
+Overfull \hbox (11.62302pt too wide) in paragraph at lines 317--318
 [][] 
  []
 
-<figures/ggplot_mu_sd_inter_0_5_Historical_data.pdf, id=225, 505.89pt x 505.89p
+<figures/ggplot_mu_sd_inter_0_5_Historical_data.pdf, id=196, 505.89pt x 505.89p
 t>
 File: figures/ggplot_mu_sd_inter_0_5_Historical_data.pdf Graphic file (type pdf
 )
 <use figures/ggplot_mu_sd_inter_0_5_Historical_data.pdf>
 Package pdftex.def Info: figures/ggplot_mu_sd_inter_0_5_Historical_data.pdf  us
-ed on input line 387.
+ed on input line 322.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
-Overfull \hbox (11.62302pt too wide) in paragraph at lines 387--388
+Overfull \hbox (11.62302pt too wide) in paragraph at lines 322--323
 [][] 
  []
 
-<figures/ggplot_mu_sd_inter_1_5_Historical_data.pdf, id=226, 505.89pt x 505.89p
+<figures/ggplot_mu_sd_inter_1_5_Historical_data.pdf, id=197, 505.89pt x 505.89p
 t>
 File: figures/ggplot_mu_sd_inter_1_5_Historical_data.pdf Graphic file (type pdf
 )
 <use figures/ggplot_mu_sd_inter_1_5_Historical_data.pdf>
 Package pdftex.def Info: figures/ggplot_mu_sd_inter_1_5_Historical_data.pdf  us
-ed on input line 392.
+ed on input line 327.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
-Overfull \hbox (11.62302pt too wide) in paragraph at lines 392--393
+Overfull \hbox (11.62302pt too wide) in paragraph at lines 327--328
 [][] 
  []
 
 <figures/ggplot_mu_sd_inter_0_5_Historical_data_+_0_5_DLTs_at_A=200_B=200.pdf, 
-id=227, 505.89pt x 505.89pt>
+id=198, 505.89pt x 505.89pt>
 File: figures/ggplot_mu_sd_inter_0_5_Historical_data_+_0_5_DLTs_at_A=200_B=200.
 pdf Graphic file (type pdf)
 <use figures/ggplot_mu_sd_inter_0_5_Historical_data_+_0_5_DLTs_at_A=200_B=200.p
 df>
 Package pdftex.def Info: figures/ggplot_mu_sd_inter_0_5_Historical_data_+_0_5_D
-LTs_at_A=200_B=200.pdf  used on input line 407.
+LTs_at_A=200_B=200.pdf  used on input line 342.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
-Overfull \hbox (11.62302pt too wide) in paragraph at lines 407--408
+Overfull \hbox (11.62302pt too wide) in paragraph at lines 342--343
 [][] 
  []
 
 <figures/ggplot_mu_sd_inter_1_5_Historical_data_+_0_5_DLTs_at_A=200_B=200.pdf, 
-id=228, 505.89pt x 505.89pt>
+id=199, 505.89pt x 505.89pt>
 File: figures/ggplot_mu_sd_inter_1_5_Historical_data_+_0_5_DLTs_at_A=200_B=200.
 pdf Graphic file (type pdf)
 <use figures/ggplot_mu_sd_inter_1_5_Historical_data_+_0_5_DLTs_at_A=200_B=200.p
 df>
 Package pdftex.def Info: figures/ggplot_mu_sd_inter_1_5_Historical_data_+_0_5_D
-LTs_at_A=200_B=200.pdf  used on input line 412.
+LTs_at_A=200_B=200.pdf  used on input line 347.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
-Overfull \hbox (11.62302pt too wide) in paragraph at lines 412--413
+Overfull \hbox (11.62302pt too wide) in paragraph at lines 347--348
 [][] 
  []
 
 <figures/ggplot_mu_sd_inter_0_5_Historical_data_+_5_5_DLTs_at_A=200_B=200.pdf, 
-id=229, 505.89pt x 505.89pt>
+id=200, 505.89pt x 505.89pt>
 File: figures/ggplot_mu_sd_inter_0_5_Historical_data_+_5_5_DLTs_at_A=200_B=200.
 pdf Graphic file (type pdf)
 <use figures/ggplot_mu_sd_inter_0_5_Historical_data_+_5_5_DLTs_at_A=200_B=200.p
 df>
 Package pdftex.def Info: figures/ggplot_mu_sd_inter_0_5_Historical_data_+_5_5_D
-LTs_at_A=200_B=200.pdf  used on input line 425.
+LTs_at_A=200_B=200.pdf  used on input line 360.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
-Overfull \hbox (11.62302pt too wide) in paragraph at lines 425--426
+Overfull \hbox (11.62302pt too wide) in paragraph at lines 360--361
 [][] 
  []
 
 <figures/ggplot_mu_sd_inter_1_5_Historical_data_+_5_5_DLTs_at_A=200_B=200.pdf, 
-id=230, 505.89pt x 505.89pt>
+id=201, 505.89pt x 505.89pt>
 File: figures/ggplot_mu_sd_inter_1_5_Historical_data_+_5_5_DLTs_at_A=200_B=200.
 pdf Graphic file (type pdf)
 <use figures/ggplot_mu_sd_inter_1_5_Historical_data_+_5_5_DLTs_at_A=200_B=200.p
 df>
 Package pdftex.def Info: figures/ggplot_mu_sd_inter_1_5_Historical_data_+_5_5_D
-LTs_at_A=200_B=200.pdf  used on input line 430.
+LTs_at_A=200_B=200.pdf  used on input line 365.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
-Overfull \hbox (11.62302pt too wide) in paragraph at lines 430--431
+Overfull \hbox (11.62302pt too wide) in paragraph at lines 365--366
 [][] 
  []
 
 <figures/ggplot_mu_sd_inter_0_5_Historical_data_+_5_5_DLTs_at_A=100_B=100.pdf, 
-id=231, 505.89pt x 505.89pt>
+id=202, 505.89pt x 505.89pt>
 File: figures/ggplot_mu_sd_inter_0_5_Historical_data_+_5_5_DLTs_at_A=100_B=100.
 pdf Graphic file (type pdf)
 <use figures/ggplot_mu_sd_inter_0_5_Historical_data_+_5_5_DLTs_at_A=100_B=100.p
 df>
 Package pdftex.def Info: figures/ggplot_mu_sd_inter_0_5_Historical_data_+_5_5_D
-LTs_at_A=100_B=100.pdf  used on input line 435.
+LTs_at_A=100_B=100.pdf  used on input line 370.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
-Overfull \hbox (11.62302pt too wide) in paragraph at lines 435--436
+Overfull \hbox (11.62302pt too wide) in paragraph at lines 370--371
 [][] 
  []
 
 <figures/ggplot_mu_sd_inter_1_5_Historical_data_+_5_5_DLTs_at_A=100_B=100.pdf, 
-id=232, 505.89pt x 505.89pt>
+id=203, 505.89pt x 505.89pt>
 File: figures/ggplot_mu_sd_inter_1_5_Historical_data_+_5_5_DLTs_at_A=100_B=100.
 pdf Graphic file (type pdf)
 <use figures/ggplot_mu_sd_inter_1_5_Historical_data_+_5_5_DLTs_at_A=100_B=100.p
 df>
 Package pdftex.def Info: figures/ggplot_mu_sd_inter_1_5_Historical_data_+_5_5_D
-LTs_at_A=100_B=100.pdf  used on input line 440.
+LTs_at_A=100_B=100.pdf  used on input line 375.
 (pdftex.def)             Requested size: 240.0pt x 239.99919pt.
 
-Overfull \hbox (11.62302pt too wide) in paragraph at lines 440--441
+Overfull \hbox (11.62302pt too wide) in paragraph at lines 375--376
 [][] 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 474--476
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 409--411
 
  []
 
 
-Overfull \hbox (13.0pt too wide) in paragraph at lines 481--481
+Overfull \hbox (13.0pt too wide) in paragraph at lines 416--416
 [] [] 
  []
 
-(./manuscript.bbl [10] [11]
+[9] (./manuscript.bbl [10]
 Underfull \hbox (badness 10000) in paragraph at lines 154--158
 []\T1/stix/m/n/10.03749 Rowntree LG. Water intox-i-ca-tion. \T1/stix/m/it/10.03
 749 Archives of Inter-nal Medicine \T1/stix/m/n/10.03749 1923; 32(2): 157.  []d
 oi: 10.1001/arch-
  []
 
-) [12] [13{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super
+) [11] [12{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super
 -t1.enc} <./figures/ggplot_mu_sd_inter_0_5_Prior.pdf> <./figures/ggplot_mu_sd_i
 nter_1_5_Prior.pdf> <./figures/ggplot_mu_sd_inter_0_5_Historical_data.pdf> <./f
-igures/ggplot_mu_sd_inter_1_5_Historical_data.pdf>] [14 <./figures/ggplot_mu_sd
+igures/ggplot_mu_sd_inter_1_5_Historical_data.pdf>] [13 <./figures/ggplot_mu_sd
 _inter_0_5_Historical_data_+_0_5_DLTs_at_A=200_B=200.pdf> <./figures/ggplot_mu_
-sd_inter_1_5_Historical_data_+_0_5_DLTs_at_A=200_B=200.pdf>] [15 <./figures/ggp
+sd_inter_1_5_Historical_data_+_0_5_DLTs_at_A=200_B=200.pdf>] [14 <./figures/ggp
 lot_mu_sd_inter_0_5_Historical_data_+_5_5_DLTs_at_A=200_B=200.pdf> <./figures/g
 gplot_mu_sd_inter_1_5_Historical_data_+_5_5_DLTs_at_A=200_B=200.pdf> <./figures
 /ggplot_mu_sd_inter_0_5_Historical_data_+_5_5_DLTs_at_A=100_B=100.pdf> <./figur
-es/ggplot_mu_sd_inter_1_5_Historical_data_+_5_5_DLTs_at_A=100_B=100.pdf>] (./ma
-nuscript.aux)
+es/ggplot_mu_sd_inter_1_5_Historical_data_+_5_5_DLTs_at_A=100_B=100.pdf>] [15
+
+]
+Overfull \hbox (2.4567pt too wide) in alignment at lines 457--469
+[] [] [] [] [] [] 
+ []
+
+[16
+
+] [17
+
+] (./manuscript.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 21510 strings out of 474116
- 329193 string characters out of 5743683
+ 21513 strings out of 474116
+ 329219 string characters out of 5743683
  1953187 words of memory out of 5000000
- 43402 multiletter control sequences out of 15000+600000
+ 43403 multiletter control sequences out of 15000+600000
  734800 words of font info for 283 fonts, out of 8000000 for 9000
  1167 hyphenation exceptions out of 8191
- 90i,16n,93p,1793b,683s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,16n,93p,1793b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bold.
 pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix/STIXGeneral-Bol
 dItalic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix/STIXGen
@@ -1308,10 +1313,10 @@ mathrm.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix/stix-mat
 hscr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix/stix-maths
 f.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/stix/stix-mathtt.p
 fb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on manuscript.pdf (15 pages, 420956 bytes).
+Output written on manuscript.pdf (17 pages, 421266 bytes).
 PDF statistics:
- 695 PDF objects out of 1000 (max. 8388607)
- 450 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
+ 703 PDF objects out of 1000 (max. 8388607)
+ 456 compressed objects within 5 object streams
+ 106 named destinations out of 1000 (max. 500000)
  195 words of extra memory for PDF output out of 10000 (max. 10000000)
 
